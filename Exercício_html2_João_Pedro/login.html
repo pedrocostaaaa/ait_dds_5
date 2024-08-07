@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .login-container {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    button {
+        width: 180px;
+        height: 22px;
+    }
+
+    .emailb {
+        width: 88%;
+    }
+
+    .senha {
+        width: 88%;
+    }
+</style>
+
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form>
+            <div class="email">
+                <div class="emailb"><label for="email">Seu email:</label></div>
+                <div class="emailc"><input type="email" id="email" name="email" required></div>
+                <div>ㅤ</div>
+            </div>
+
+            <div class="senha"><label for="password">Sua senha:</label></div>
+            <input type="password" id="password" name="password" required>
+            <div>ㅤ</div>
+
+
+            <input type="checkbox" id="rememberMe">
+            <label for="rememberMe">Manter-me logado</label>
+
+            <div>ㅤ</div>
+
+            <button type="submit">Logar</button>
+            <p>Ainda não tem conta? <a href="#">Cadastre-se</a></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
