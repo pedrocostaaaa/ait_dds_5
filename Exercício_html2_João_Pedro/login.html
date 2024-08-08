@@ -1,70 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-    <title>Tela de Login</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Login</title>
 </head>
-<style>
-    .login-container {
-
-        margin-top: 100px;
-        text-align: center;
-        padding-top: 5px;
-        padding-bottom: 15px;
-        background-color: rgb(89, 102, 218);
-        width: 40%;
-
-    }
-
-    button {
-        width: 220px;
-        height: 22px;
-        background-color: #5a9bb1;
-        border: white;
-    }
-
-    #Logar{
-        color: white;
-    }
-
-    .emailb {
-        width: 70%;
-    }
-
-    .senha {
-        width: 70%;
-    }
-
-    
-</style>
 
 <body>
-    <div class="login-container">
-        <h1>Login</h1>
-        <form>
-            <div class="email">
-                <div class="emailb"><label for="email">Seu email:</label></div>
-                <div class="emailc"><input type="email" id="email" name="email" required></div>
+    <main class="login">
+        <form class="container">
+            <h1 class="headline">Login</h1>
+            <div class="form">
+                <label class="label-email" for="email">E-mail</label>
+                <i class="bx bxs-user"></i>
+                <input class="input-email" type="email" id="email" placeholder="Seu email:" autocomplete="off">
+                <label class="label-password" for="password">Senha</label>
+                <i class="bx bxs-key"></i>
+                <input class="input-password" type="password" id="password" placeholder="Sua senha:">
                 <div>ㅤ</div>
+                <input type="checkbox" id="rememberMe">
+                <label for="rememberMe">Manter-me logado</label>
+                <div>ㅤ</div>
+                <input class="button" type="submit" value="Login">
+                <div>ㅤ</div>
+                <p id="Conta">Ainda não tem conta? <a href="#">Cadastre-se</a></p>
             </div>
-
-            <div class="senha"><label for="password">Sua senha:</label></div>
-            <input type="password" id="password" name="password" required>
-            <div>ㅤ</div>
-
-
-            <input type="checkbox" id="rememberMe">
-            <label for="rememberMe">Manter-me logado</label>
-
-            <div>ㅤ</div>
-
-            <button id="Logar" type="submit">Logar</button>
-            <p id="Conta">Ainda não tem conta? <a href="#">Cadastre-se</a></p>
         </form>
-    </div>
-
-    <script src="script.js"></script>
+    </main>
 </body>
 
 </html>
