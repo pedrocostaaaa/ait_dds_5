@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <div>
+                <span class="navbar-brand">logo</span>
+            </div>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Sobre Nós</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Contato</a></li>
+            </ul>
+        </nav>
+        <h1>Olá, Mundo</h1>
+        <button class="btn btn-primary">Enviar</button>
+        <a href="http://google.com" class="btn btn-success">Google</a>
+        <br>
+        <input type="text" name="" id="" class="form-control">
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Aluno</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Pedro</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>João</td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="senai-carrosel" class="carousel slide container">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://senaies.com.br/wp-content/uploads/2024/06/Banner-full_Matriculas_SENAI-1.png"
+                        alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://senaies.com.br/wp-content/uploads/2024/05/Banner-Site_Senai-Porto.png" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://senaies.com.br/wp-content/uploads/2024/04/Banner_Card1_desktop_1250x250px.png"
+                        alt="">
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-target="#senai-carrosel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#senai-carrosel" data-bs-slide="next"></button>
+            <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
